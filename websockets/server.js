@@ -29,3 +29,22 @@ wss.on("connection", (socket, request) => {
     console.log(`Connection closed: ${ip}`);
   });
 });
+
+console.log("Websocketserver isliveon ws://localhost:8080");
+
+/*
+const socket=new WebSocket("ws://localhost:8080");
+
+socket.onmessage=(event)=>{
+    console.log("Message from server:",event.data);
+}
+
+socket.onopen=()=>{
+    socket.send("Hello from chrome browser");
+}
+
+do it in browser console
+
+https://github.com/websockets/wscat
+another way to test is using wscat cli tool
+*/
